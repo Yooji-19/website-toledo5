@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bucket List - Von Andrei Toledo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --bg: #1a1410;
+  --card: #2d211a;
+  --card-hover: #38281f;
+  --text: #f5efe6;
+  --muted: #d6c2b5;
+  --accent: #e67e22;
+}
+
+/* GLOBAL */
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #2b1f17, #1a1410 70%);
+  color: var(--text);
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* NAVBAR */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 70px;
+  background: rgba(26,20,16,0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.nav nav a {
+  margin-left: 30px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav nav a:hover {
+  color: var(--accent);
+}
+
+/* WRAPPER */
+
+.wrapper {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.page-sub {
+  color: var(--muted);
+  margin-bottom: 70px;
+}
+
+/* GRID */
+
+.bucket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* CARD */
+
+.bucket-card {
+  background: var(--card);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.bucket-card:hover {
+  transform: translateY(-8px);
+  background: var(--card-hover);
+}
+
+.bucket-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.bucket-content {
+  padding: 25px;
+}
+
+.bucket-content h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.bucket-content p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* NUMBER BADGE */
+
+.badge {
+  position: absolute;
+  background: var(--accent);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  top: 15px;
+  left: 15px;
+}
+
+.card-img-wrapper {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="brand">VON TOLEDO</div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="beats.html">My Beats</a>
+    <a href="movies.html">Movies</a>
+    <a href="tvshows.html">TV Shows</a>
+  </nav>
+</header>
+
+<div class="wrapper">
+
+<h1>10 Things Before I Die</h1>
+<p class="page-sub">My personal life goals and dreams I want to accomplish someday.</p>
+
+<div class="bucket-grid">
+
+<!-- 1 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">1</span>
+    <img src="https://i.pinimg.com/736x/0f/7c/4c/0f7c4c6ff0c1a8de0319077ff1f2d01d.jpg">
+  </div>
+  <div class="bucket-content">
+    <h3>Travel to Japan</h3>
+    <p>Experience Tokyo, Mt. Fuji, anime locations, and Japanese culture in real life.</p>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">2</span>
+    <img src="https://cdn.mos.cms.futurecdn.net/57jQMDN5MZLYfV8ps8HuZQ.jpg">
+  </div>
+  <div class="bucket-content">
+    <h3>See the Northern Lights</h3>
+    <p>Witness the magical aurora borealis at least once in my lifetime.</p>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">3</span>
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+  </div>
+  <div class="bucket-content">
+    <h3>Become a Successful Data Analyst</h3>
+    <p>Build a stable career and grow professionally in the tech field.</p>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">4</span>
+    <img src="https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Cities/Venice/Venice-2024-Gondola-Rialto-Bridge-Shutterstock-2162340095-Hybris.jpg?rev=72d18c18d0844dada8e26f7ac3e01be7&hash=4AE7EF8622D664527B600BE3B4270A2D&h=480.375&w=1081.5">
+  </div>
+  <div class="bucket-content">
+    <h3>Travel Europe</h3>
+    <p>Visit Italy, France, and other beautiful European cities.</p>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">5</span>
+    <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:882,cw:2268,ch:2268,q:80,w:2268/AmtQeFMYk5ByQjfRFqL9CP.jpg">
+  </div>
+  <div class="bucket-content">
+    <h3>Own My Dream PC Setup</h3>
+    <p>Build a powerful aesthetic PC without worrying about RAM prices.</p>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">6</span>
+    <img src="https://i.pinimg.com/736x/c4/ee/a4/c4eea4906647b7c01cc0e9f98862f9ce.jpg">
+  </div>
+  <div class="bucket-content">
+    <h3>Build My Dream Home</h3>
+    <p>Create a beautiful, comfortable, and functional living space that reflects my personality and lifestyle.</p>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">7</span>
+    <img src="https://di-uploads-pod15.dealerinspire.com/capecoralchryslerdodgejeepram/uploads/2019/06/dodge-charger-srt-hellcat-octane-edition.jpg">
+  </div>
+  <div class="bucket-content">
+    <h3>Buy My Dream Cars</h3>
+    <p>Own a collection of cars that I've always dreamed of driving.</p>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">8</span>
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+  </div>
+  <div class="bucket-content">
+    <h3>Live in another country</h3>
+    <p>Experience life in a different country and immerse myself in a new culture.</p>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">9</span>
+    <img src="https://cdn.whole-dog-journal.com/wp-content/uploads/2023/10/family-dog-beagle.jpg.optimal.jpg">
+  </div>
+  <div class="bucket-content">
+    <h3>Have My Own Family</h3>
+    <p>Start a family and raise children in a loving, supportive environment.</p>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="bucket-card">
+  <div class="card-img-wrapper">
+    <span class="badge">10</span>
+    <img src="https://i.insider.com/637bc08d2c8b9a0018cbed9b?width=1200&format=jpeg">
+  </div>
+  <div class="bucket-content">
+    <h3>Live Without Worrying About Finances</h3>
+    <p>Have enough financial security to live comfortably and not stress about money.</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

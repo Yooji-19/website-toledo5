@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venice - Von Andrei Toledo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+
+<style>
+
+/* HERO */
+
+.hero {
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=2000&q=80") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.75));
+}
+
+.hero h1 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: white;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+/* CONTENT */
+
+.place-wrapper {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+.place-wrapper h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.place-wrapper p {
+  line-height: 1.9;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+/* GALLERY */
+
+.place-gallery {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.place-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.place-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Venice</h1>
+</section>
+
+<div class="place-wrapper">
+
+<h2>Why I Want to Visit Venice</h2>
+
+<p>
+Venice is one of the most aesthetic and romantic cities in the world.
+I’ve always been fascinated by the canals, gondolas, and historic buildings
+that look like something straight out of a movie.
+</p>
+
+<p>
+I want to ride a gondola through the Grand Canal and experience the peaceful,
+slow-paced atmosphere of the city. The architecture, reflections on the water,
+and soft golden sunsets make Venice feel magical.
+</p>
+
+<p>
+Visiting Venice would be special to me because it represents beauty,
+history, and timeless European elegance.
+</p>
+
+<div class="place-gallery">
+  <img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&fit=crop&w=1200&q=80" alt="Venice Canal">
+  <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1200&q=80" alt="Gondola Ride">
+  <img src="https://media.istockphoto.com/id/1432020260/photo/venice-grand-canal-and-santa-maria-della-salute-church-at-sunrise-italy.jpg?s=612x612&w=0&k=20&c=2CHPPHn3JmIJXSZzm5RSimjT-HNw_z6G2d_9KauZrkY=" alt="Venice Sunset">
+</div>
+
+<a href="../dreamplaces.html" class="back-btn">← Back to Dream Map</a>
+
+</div>
+
+</body>
+</html>

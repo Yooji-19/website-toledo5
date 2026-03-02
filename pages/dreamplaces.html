@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Places - Von Andrei Toledo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --bg: #1a1410;
+  --card: #2d211a;
+  --card-hover: #38281f;
+  --text: #f5efe6;
+  --muted: #d6c2b5;
+  --accent: #e67e22;
+}
+
+/* GLOBAL */
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #2b1f17, #1a1410 70%);
+  color: var(--text);
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* NAVBAR */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 70px;
+  background: rgba(26,20,16,0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.nav nav a {
+  margin-left: 30px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav nav a:hover {
+  color: var(--accent);
+}
+
+/* WRAPPER */
+
+.wrapper {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+/* MAP CARD */
+
+.map-card {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.map-card:hover {
+  transform: translateY(-6px);
+  background: var(--card-hover);
+}
+
+.map-card img {
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  max-width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .nav {
+    padding: 20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="brand">VON TOLEDO</div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="beats.html">My Beats</a>
+    <a href="movies.html">Movies</a>
+    <a href="tvshows.html">TV Shows</a>
+    <a href="bucketlist.html">Bucket List</a>
+  </nav>
+</header>
+
+<div class="wrapper">
+
+<h1>🌍 My Dream Places to Visit</h1>
+<p style="color:var(--muted); margin-bottom:50px;">
+Click the scrapbook map to explore my dream destinations.
+</p>
+
+<div class="map-card">
+
+<img src="../images/DreamMAP.jpg"
+     usemap="#image-map"
+     alt="Dream Map">
+
+<map name="image-map">
+    <area href="map-pages/honshu.html" target="honshuTab" coords="175,31,162,184,292,194,305,42" shape="poly">
+    <area href="map-pages/shinjuku.html" target="shinjukuTab" coords="21,223,150,211,164,362,34,374" shape="poly">
+    <area href="map-pages/kawasaki.html" target="kawasakiTab" coords="198,373,329,371,333,523,201,527" shape="poly">
+    <area href="map-pages/paris.html" target="parisTab" coords="561,366,690,377,676,528,550,519" shape="poly">
+    <area href="map-pages/venice.html" target="veniceTab" coords="471,41,601,32,613,185,482,192" shape="poly">
+</map>
+
+</div>
+
+</div>
+
+</body>
+</html>

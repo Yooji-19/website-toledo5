@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shinjuku - Von Andrei Toledo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+
+<style>
+
+.hero {
+  height: 500px;
+  background: url("https://www.gotokyo.org/en/story/guide/shinjuku-shop/images/shopping_guide.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.75));
+}
+
+.hero h1 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: white;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+/* CONTENT */
+
+.place-wrapper {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+.place-wrapper h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.place-wrapper p {
+  line-height: 1.9;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+/* GALLERY */
+
+.place-gallery {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.place-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.place-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Shinjuku</h1>
+</section>
+
+<div class="place-wrapper">
+
+<h2>Why I Want to Visit Shinjuku</h2>
+
+<p>
+Shinjuku is one of the most vibrant and energetic districts in Tokyo.
+I want to visit the famous stairs featured in the anime movie
+<em>Kimi no Na wa (Your Name)</em>. Seeing that real-life location
+would feel nostalgic and surreal.
+</p>
+
+<p>
+Aside from that, I also want to explore Don Quijote, neon-lit streets,
+arcades, and experience the nightlife. Shinjuku represents the modern,
+bright, and cinematic side of Japan.
+</p>
+
+<div class="place-gallery">
+  <img src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2019/08/W2A4541-1024x600.jpg" alt="Shinjuku Streets">
+  <img src="https://media.istockphoto.com/id/1253808098/photo/tokyo-shinjuku-night-streets-neon-lights-of-kabukicho-japan.jpg?s=1024x1024&w=is&k=20&c=8pixAg6eeGyk_HVU041K3ik4_zYmglmd-10fDCHNoFA=" alt="Shinjuku Neon Lights">
+  <img src="https://live.staticflickr.com/3826/14268768744_a2993bac43_b.jpg" alt="Tokyo Night">
+</div>
+
+<a href="../dreamplaces.html" class="back-btn">← Back to Dream Map</a>
+
+</div>
+
+</body>
+</html>

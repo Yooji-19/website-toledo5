@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paris - Von Andrei Toledo</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+
+<style>
+
+/* HERO */
+
+.hero {
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=2000&q=80") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.75));
+}
+
+.hero h1 {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: white;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+/* CONTENT */
+
+.place-wrapper {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+.place-wrapper h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.place-wrapper p {
+  line-height: 1.9;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+/* GALLERY */
+
+.place-gallery {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.place-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.place-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Paris</h1>
+</section>
+
+<div class="place-wrapper">
+
+<h2>Why I Want to Visit Paris</h2>
+
+<p>
+Paris is one of the most aesthetic and romantic cities in the world.
+I want to see the Eiffel Tower in person, especially at night when it lights up.
+The architecture, history, and artistic atmosphere make it feel magical.
+</p>
+
+<p>
+I also want to explore famous museums like the Louvre,
+walk along the Seine River, and experience the peaceful European vibe.
+Paris feels elegant, timeless, and full of culture.
+</p>
+
+<p>
+Visiting Paris would be a dream because it represents art, beauty,
+and a completely different world from where I live.
+</p>
+
+<div class="place-gallery">
+  <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=1200&q=80" alt="Eiffel Tower">
+  <img src="https://cdn.oxfordshiremind.org.uk/uploads/2020/06/WFW-2-1024x682-1.jpg" alt="Louvre Museum">
+  <img src="https://cdn.sanity.io/images/nxpteyfv/goguides/6c057feb374cceeda742120aee4c799a0d4e0ed6-1600x1066.jpg" alt="Seine River">
+</div>
+
+<a href="../dreamplaces.html" class="back-btn">← Back to Dream Map</a>
+
+</div>
+
+</body>
+</html>

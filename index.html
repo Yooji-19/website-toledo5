@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Von Andrei Toledo</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="brand">VON TOLEDO</div>
+  <nav>
+    <a href="pages/about.html">About</a>
+    <a href="pages/gallery.html">Gallery</a>
+    <a href="pages/beats.html">My Beats</a>
+    <a href="pages/movies.html">Movies</a>
+    <a href="pages/tvshows.html">TV Shows</a>
+    <a href="pages/dreamplaces.html">Dream Places</a>
+    <a href="pages/bucketlist.html">Bucket List</a>
+  </nav>
+</header>
+
+<main class="wrapper">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="pill">COMPUTER SCIENCE STUDENT</p>
+
+      <h1>
+        Hi, I’m <br>
+        <span>Von Andrei Toledo</span>
+      </h1>
+
+      <p class="hero-desc">
+        Building strong foundations in programming, databases,
+        and analytics while working toward becoming a data analyst.
+      </p>
+
+      <div class="buttons">
+        <a href="https://open.spotify.com/" target="_blank" class="btn">
+          Spotify Playlist
+        </a>
+
+        <a href="#blog" class="btn secondary">
+          View Blog
+        </a>
+
+        <!-- NEW VIDEO BUTTON -->
+        <a href="#intro-video" class="btn secondary">
+          Watch Intro
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="image-grid">
+        <img src="images/ME.jpg" alt="">
+        <img src="images/ME2.jpg" alt="">
+        <img src="images/ME3.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-left">
+      <h2>About Me</h2>
+      <p>
+        I grew up in Pangasinan, moved to Manila, and learned how to adapt to
+        new environments. Through education and life experiences, I developed
+        discipline, resilience, and a passion for continuous growth.
+      </p>
+      <a href="pages/about.html" class="btn secondary">Read Full Story</a>
+    </div>
+
+    <div class="about-highlight">
+      <h3>Career Goal</h3>
+      <p>
+        To become a skilled data analyst who transforms raw information
+        into meaningful insights that drive better decisions.
+      </p>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog" id="blog">
+    <h2 class="section-title">Blog</h2>
+
+    <div class="blog-grid">
+
+      <div class="blog-card featured">
+        <img src="https://cdna.pcpartpicker.com/static/forever/images/trends/2026.01.13.usd.ram.ddr5.6000.2x16384.fbb90a9f910af17a253168867bbb4ac7.png">
+        <h3>How AI Companies Boomed RAM Prices</h3>
+        <p>
+          Exploring how artificial intelligence reshaped hardware demand
+          and caused RAM prices to surge globally.
+        </p>
+        <a href="pages/blog1.html" class="btn">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <img src="images/me and mama.jpg">
+        <h3>The Pressure of a Teacher’s Child</h3>
+        <a href="pages/blog2.html" class="btn">Read More</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>My Path Toward Becoming a Data Analyst</h3>
+        <a href="pages/blog3.html" class="btn">Read More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="quick-links">
+    <h2 class="section-title">Explore More</h2>
+
+    <div class="quick-grid">
+      <a href="pages/bucketlist.html" class="quick-card">
+        <span>🪣</span>
+        <h3>Bucket List</h3>
+      </a>
+
+      <a href="pages/beats.html" class="quick-card">
+        <span>🎧</span>
+        <h3>My Beats</h3>
+      </a>
+
+      <a href="pages/movies.html" class="quick-card">
+        <span>🎬</span>
+        <h3>Movies</h3>
+      </a>
+
+      <a href="pages/tvshows.html" class="quick-card">
+        <span>📺</span>
+        <h3>TV Shows</h3>
+      </a>
+
+      <a href="pages/dreamplaces.html" class="quick-card">
+        <span>🌍</span>
+        <h3>Dream Places</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>vonandreii.toledo@gmail.com</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <p>09477275004</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Facebook</h3>
+        <a href="https://www.facebook.com/vonandrei.toledo/" target="_blank">
+          Visit Profile →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- VIDEO MODAL -->
+<div id="intro-video" class="video-modal">
+  <a href="#top" class="video-overlay"></a>
+
+  <div class="video-modal-content">
+    <a href="#top" class="video-close">✕</a>
+
+    <video controls autoplay muted playsinline>
+      <source src="images/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+</body>
+</html>
